@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #2c3e50;
+  padding: 20px;
+  color: white;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #3498db;
+}
+
+.about-text h1 {
+  margin: 0 0 10px 0;
+}
+
+.about-text p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.nav-btn {
+  background: #3498db;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.nav-btn.large {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.container > h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin: 30px 0;
+}
+
+.task-section {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-left: 4px solid #3498db;
+}
+
+.task-title {
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.task-title::before {
+  content: "•";
+  color: #3498db;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+input, select, button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+.result {
+  background: #ecf0f1;
+  padding: 12px;
+  border-radius: 3px;
+  margin-top: 10px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.methods {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.nav-buttons {
+  text-align: center;
+  margin: 30px 0;
+}
+
+@media (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .input-group {
+    flex-direction: column;
+  }
+  
+  input, select, button {
+    width: 100%;
+  }
+}
