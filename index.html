@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SET E Tasks</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="about">
+<img src="https://static.vecteezy.com/system/resources/thumbnails/009/121/352/small_2x/rnu-logo-rnu-letter-rnu-letter-logo-design-initials-rnu-logo-linked-with-circle-and-uppercase-monogram-logo-rnu-typography-for-technology-business-and-real-estate-brand-vector.jpg" alt="Logo">
+<div>
+<h1>About Me</h1>
+<p><strong>Name:</strong> Markuss Karpovs 4252</p>
+<p><strong>Course:</strong> Internet and Web Basics</p>
+<p><strong>Description:</strong> 20 JavaScript tasks from SET E</p>
+<p><strong>Links:</strong> <a href="description.html" class="nav-btn">Task Explanations</a> | <a href="https://github.com/mk-btc0">Github</a> | <a href="https://github.com/mk-btc0/crypto-tools-mk-btc0">Project</a></p>
+</div>
+</div>
+</header>
+
+<div class="container">
+<h1>SET E Tasks</h1>
+
+<div class="task-section">
+<h3 class="task-title">1. Reverse a string.</h3>
+<div class="input-group">
+<input type="text" id="reverseInput" placeholder="Enter text">
+<button onclick="reverseString()">Reverse</button>
+</div>
+<div class="result" id="reverseResult">Result: -</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">2. Extract 3rd and 4th characters.</h3>
+<div class="input-group">
+<input type="text" id="extractInput" placeholder="Enter text">
+<button onclick="extractChars()">Extract</button>
+</div>
+<div class="result" id="extractResult">Result: -</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">3. Find longest word.</h3>
+<div class="input-group">
+<input type="text" id="longestInput" placeholder="Enter sentence">
+<button onclick="findLongestWord()">Find</button>
+</div>
+<div class="result" id="longestResult">Result: -</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">4. Convert string to lowercase.</h3>
+<div class="input-group">
+<input type="text" id="lowercaseInput" placeholder="UPPERCASE">
+<button onclick="toLowercase()">Convert</button>
+</div>
+<div class="result" id="lowercaseResult">Result: -</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">5. Convert string to uppercase.</h3>
+<div class="input-group">
+<input type="text" id="uppercaseInput" placeholder="lowercase">
+<button onclick="toUppercase()">Convert</button>
+</div>
+<div class="result" id="uppercaseResult">Result: -</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">6. Detect words + special symbols.</h3>
+<div class="input-group">
+<input type="text" id="wordsInput" placeholder="Text with symbols">
+<button onclick="countWordsSymbols()">Count</button>
+</div>
+<div class="result" id="wordsResult">Words: 0, Symbols: 0</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">7. Create array of numbers.</h3>
+<div class="input-group">
+<input type="text" id="arrayInput" placeholder="5,10,15">
+<button onclick="createArray()">Create</button>
+<button onclick="showThird()">Show 3rd</button>
+</div>
+<div class="result" id="arrayResult">Array: []</div>
+<div class="result" id="thirdElement">Third: -</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">8. Display third element.</h3>
+<div class="input-group">
+<button onclick="getThird()">Get 3rd element</button>
+</div>
+<div class="result" id="thirdElement2">Result: -</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">9. Find last element from array.</h3>
+<div class="input-group">
+<input type="text" id="lastArrayInput" placeholder="apple,banana">
+<button onclick="findLast()">Find Last</button>
+</div>
+<div class="result" id="lastElement">Result: -</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">10. Find 10th character.</h3>
+<div class="input-group">
+<button onclick="getTenth()">Enter text</button>
+</div>
+<div class="result" id="tenthChar">Result: -</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">11. Apply map to double.</h3>
+<div class="input-group">
+<input type="text" id="mapInput" placeholder="1,2,3">
+<button onclick="doubleArray()">Double</button>
+</div>
+<div class="result" id="mapResult">Result: []</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">12. Splice delete.</h3>
+<div class="input-group">
+<input type="text" id="spliceInput" placeholder="a,b,c,d">
+<input type="number" id="spliceIndex" placeholder="Start">
+<input type="number" id="spliceCount" placeholder="Count">
+<button onclick="spliceDelete()">Delete</button>
+</div>
+<div class="result" id="spliceResult">Result: []</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">13. Arithmetic operations.</h3>
+<div class="input-group">
+<input type="number" id="opNum1" placeholder="Num1">
+<input type="number" id="opNum2" placeholder="Num2">
+<select id="operation">
+<option value="add">Add</option>
+<option value="subtract">Subtract</option>
+<option value="multiply">Multiply</option>
+<option value="divide">Divide</option>
+</select>
+<button onclick="calculate()">Calculate</button>
+</div>
+<div class="result" id="operationResult">Result: -</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">14. Add two numbers.</h3>
+<div class="input-group">
+<input type="number" id="addNum1" placeholder="First">
+<input type="number" id="addNum2" placeholder="Second">
+<button onclick="addNumbers()">Add</button>
+</div>
+<div class="result" id="addResult">Result: -</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">15. Multiply two numbers.</h3>
+<div class="input-group">
+<input type="number" id="multiplyNum1" placeholder="First">
+<input type="number" id="multiplyNum2" placeholder="Second">
+<button onclick="multiplyNumbers()">Multiply</button>
+</div>
+<div class="result" id="multiplyResult">Result: -</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">16. Divide two numbers.</h3>
+<div class="input-group">
+<input type="number" id="divideNum1" placeholder="Numerator">
+<input type="number" id="divideNum2" placeholder="Denominator">
+<button onclick="divideNumbers()">Divide</button>
+</div>
+<div class="result" id="divideResult">Result: -</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">17. Check even/odd.</h3>
+<div class="input-group">
+<input type="number" id="evenOddInput" placeholder="Number">
+<button onclick="checkEvenOdd()">Check</button>
+</div>
+<div class="result" id="evenOddResult">Result: -</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">18. Display form data.</h3>
+<div class="input-group">
+<input type="text" id="formName" placeholder="Name">
+<input type="email" id="formEmail" placeholder="Email">
+<button onclick="showFormData()">Display</button>
+</div>
+<div class="result" id="formData">Result: -</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">19. Form data count.</h3>
+<div class="input-group">
+<button onclick="countFields()">Count fields</button>
+</div>
+<div class="result" id="formCount">Result: -</div>
+</div>
+
+<div class="task-section">
+<h3 class="task-title">20. Create person object.</h3>
+<div class="input-group">
+<input type="text" id="personName" placeholder="Name">
+<input type="number" id="personAge" placeholder="Age">
+<input type="text" id="personCity" placeholder="City">
+<button onclick="createPerson()">Create</button>
+</div>
+<div class="result" id="personResult">Result: {}</div>
+</div>
+
+<div class="nav-buttons">
+<a href="description.html" class="nav-btn large">View Task Explanations</a>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
