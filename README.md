@@ -18,4 +18,4 @@
 ## 👨‍💻 Author
 **Markuss Karpovs** | ID: 4252 | 📚 Internet and Web Basics
 
-🔗 [View exam]([index.html](https://mk-btc0.github.io/exam_rnu_17.12.2025/)) | 
+🔗 [View exam] https://mk-btc0.github.io/exam_rnu_17.12.2025/
